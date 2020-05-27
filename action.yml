@@ -1,4 +1,4 @@
-name: "Login"
+name: "Okteto Login"
 description: "Login into to an Okteto Cloud account"
 inputs:
   token: 
