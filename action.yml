@@ -13,3 +13,6 @@ runs:
   args:
     - ${{ inputs.token }}
     - ${{ inputs.url }}
+branding:
+  color: 'green'
+  icon: 'at-sign'
