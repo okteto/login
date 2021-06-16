@@ -9,5 +9,10 @@ if [ -z $token ]; then
   exit 1
 fi
 
+echo USER
+whoami
+echo FOLDER
+ls -al /github/home
+
 echo running: okteto login --token=$token $url
 okteto login --token=$token $url 
