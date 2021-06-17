@@ -11,5 +11,6 @@ fi
 
 
 export OKTETO_HOME=$RUNNER_TEMP
+mkdir -p $OKTETO_HOME
 echo running: okteto login --token=$token $url
 okteto login --token=$token $url 
