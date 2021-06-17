@@ -9,5 +9,7 @@ if [ -z $token ]; then
   exit 1
 fi
 
+
+export OKTETO_HOME=$RUNNER_TEMP
 echo running: okteto login --token=$token $url
 okteto login --token=$token $url 
