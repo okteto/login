@@ -1,5 +1,5 @@
 #!/bin/sh
-set -el
+set -ex
 
 token=$1
 url=$2
