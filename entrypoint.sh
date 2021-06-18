@@ -11,8 +11,14 @@ fi
 
 echo USER
 whoami
+echo PATH
+echo $PWD
+echo HOME
+echo $HOME
 echo FOLDER
 ls -al /github/home
+echo OKTETO
+which okteto
 
 echo running: okteto login --token=$token $url
 okteto login --token=$token $url 
