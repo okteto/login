@@ -11,6 +11,8 @@ fi
 
 echo USER
 whoami
+echo ID
+id
 echo PATH
 echo $PWD
 echo HOME
