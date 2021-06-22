@@ -20,5 +20,7 @@ ls -al /github/home
 echo OKTETO
 which okteto
 
+sudo rm -Rf /github/home/.okteto
+
 echo running: okteto login --token=$token $url
 okteto login --token=$token $url 
