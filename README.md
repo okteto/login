@@ -23,6 +23,12 @@ Copy [your Okteto API token](https://cloud.okteto.com/#/settings/setup) and save
 
 Your Okteto Enterprise URL. Use this to run your actions in your Okteto Enterprise instance (https://okteto.com/enterprise).
 
+## Environment variables
+
+### `CUSTOM_CERTIFICATE`
+
+The self-signed certificate of your environment.
+
 ## Example usage
 
 This example runs the login action and then activates a namespace.
