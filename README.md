@@ -27,7 +27,7 @@ Your Okteto Enterprise URL. Use this to run your actions in your Okteto Enterpri
 
 ### `CUSTOM_CERTIFICATE`
 
-The self-signed certificate of your environment.
+The self-signed certificate of your environment. Best set on global level when using multiple Okteto actions.
 
 ## Example usage
 
@@ -43,6 +43,31 @@ jobs:
 
   devflow:
     runs-on: ubuntu-latest
+    steps:
+    
+    - uses: okteto/login@master
+      with:
+        token: ${{ secrets.OKTETO_TOKEN }}
+    
+    - uses: okteto/namespace@master
+      with:
+        name: cindylopez
+```
+
+This example runs the login action and then activates a namespace while using self-signed certificates
+
+```yaml
+# File: .github/workflows/workflow.yml
+on: [push]
+
+name: example
+
+jobs:
+
+  devflow:
+    runs-on: ubuntu-latest
+    env:
+      CUSTOM_CERTIFICATE: ${{ secrets.CUSTOM_CA_CERT }}
     steps:
     
     - uses: okteto/login@master
