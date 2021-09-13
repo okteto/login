@@ -39,11 +39,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - uses: okteto/login@master
+    - uses: okteto/login@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
     
-    - uses: okteto/namespace@master
+    - uses: okteto/namespace@latest
       with:
         name: cindylopez
 ```
@@ -70,11 +70,11 @@ jobs:
       OKTETO_CA_CERT: ${{ secrets.OKTETO_CA_CERT }}
     steps:
     
-    - uses: okteto/login@master
+    - uses: okteto/login@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
     
-    - uses: okteto/namespace@master
+    - uses: okteto/namespace@latest
       with:
         name: cindylopez
 ```
