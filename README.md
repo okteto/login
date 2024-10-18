@@ -2,7 +2,7 @@
 
 ## Important Notice
 
-### 🚨 This GitHub Action is Deprecated in favor of https://github.com/okteto/context
+### 🚨 This GitHub Action is deprecated in favor of https://github.com/okteto/context
 
 This GitHub Action is now **deprecated** and will no longer receive updates or maintenance. We recommend that you use [the context action instead](https://github.com/okteto/context).
 
